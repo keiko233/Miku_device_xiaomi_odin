@@ -213,6 +213,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Screen density
 TARGET_SCREEN_DENSITY := 440
 
+# Gralloc handle has reserved size
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-12-01
 
