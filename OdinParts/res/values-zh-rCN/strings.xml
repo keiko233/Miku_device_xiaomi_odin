@@ -14,11 +14,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- App Name -->
-    <string name="app_name">Odin Parts</string>
     <!-- DC dimming -->
-    <string name="dc_dimming_title">DC Dimming</string>
-    <string name="dc_dimming_summary">May reduce eye strain when using the phone, which may reduce display quality</string>
-    <string name="dc_dimming_failed">Failed to enable DC dimming!</string>
+    <string name="dc_dimming_title">DC 调光</string>
+    <string name="dc_dimming_summary">可以减轻使用手机时的眼部疲劳，可能会降低显示质量</string>
+    <string name="dc_dimming_failed">DC 调光开启失败！</string>
 
 </resources>
