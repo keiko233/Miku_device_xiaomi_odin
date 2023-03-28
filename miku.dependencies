@@ -1,0 +1,20 @@
+[
+  { 
+    "repository"   : "LineageOS/android_packages_resources_devicesettings",
+    "target_path"  : "packages/resources/devicesettings",
+    "branch"       : "lineage-20.0",
+    "remote"       : "github"
+  },
+  { 
+    "repository"   : "AmeChanRain/odin-vendor",
+    "target_path"  : "vendor/xiaomi/odin",
+    "branch"       : "TDA",
+    "remote"       : "github"
+  },
+  {
+    "repository"   : "Inkypen79/kernel_xiaomi_odin",
+    "target_path"  : "kernel/xiaomi/odin",
+    "branch"       : "lineage-19.1",
+    "remote"       : "github"
+  }
+]
