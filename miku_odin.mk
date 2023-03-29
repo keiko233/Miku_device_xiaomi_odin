@@ -11,11 +11,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Inherit from odin device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := xiaomi
 PRODUCT_DEVICE := odin
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_NAME := miku_odin
-PRODUCT_MODEL := MIX 4
+PRODUCT_MODEL := 2106118C
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
