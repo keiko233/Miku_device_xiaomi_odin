@@ -6,15 +6,15 @@
     "remote"       : "github"
   },
   { 
-    "repository"   : "AmeChanRain/odin-vendor",
+    "repository"   : "keiko233/vendor_xiaomi_odin",
     "target_path"  : "vendor/xiaomi/odin",
     "branch"       : "TDA",
     "remote"       : "github"
   },
   {
-    "repository"   : "Inkypen79/kernel_xiaomi_odin",
+    "repository"   : "keiko233/kernel_xiaomi_odin",
     "target_path"  : "kernel/xiaomi/odin",
-    "branch"       : "lineage-19.1",
+    "branch"       : "TDA",
     "remote"       : "github"
   }
 ]
