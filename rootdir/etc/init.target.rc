@@ -233,10 +233,6 @@ on boot
     # Set DT2W permission
     chown system system /sys/devices/virtual/touch/tp_dev/double_tap
 
-    # Set doze mode permissions
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
-
     # Set cgroup permissions
     chown system system /dev/cpuset/cgroup.procs
     chown system system /dev/cpuset/foreground/cgroup.procs
