@@ -27,6 +27,7 @@ import android.view.SurfaceControl
 import androidx.preference.PreferenceManager
 
 import com.odin.parts.display.DcUtils
+import com.odin.parts.touch.TouchUtils
 
 class BootCompletedReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
@@ -36,6 +37,11 @@ class BootCompletedReceiver : BroadcastReceiver() {
         val dcDimmingEnabled = sharedPreference.getBoolean(DcUtils.DC_DIMMING_KEY, false)
         if (!DcUtils.setDcStatus(if (dcDimmingEnabled) DcUtils.DC_ON else DcUtils.DC_OFF)) {
                 Log.e(TAG, "Failed to set DC node on boot!")
+        }
+
+        val highPollingRateEnabled = sharedPreference.getBoolean(TouchUtils.TOUCH_POLLING_RATE_KEY, false)
+        if (!TouchUtils.setTouchStatus(if (highPollingRateEnabled) TouchUtils.HIGH_POLLING_RATE_ON else TouchUtils.HIGH_POLLING_RATE_OFF)) {
+                Log.e(TAG, "Failed to set High touch poling rate node on boot!")
         }
 
         val displayToken: IBinder = SurfaceControl.getInternalDisplayToken()

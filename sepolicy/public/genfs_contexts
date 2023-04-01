@@ -1,0 +1,2 @@
+# High touch polling rate 
+genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate         u:object_r:sysfs_touch_polling_rate:s0
