@@ -327,6 +327,9 @@ PRODUCT_PACKAGES += \
     TelephonyResOdin \
     WifiResOdin
 
+# Parts
+PRODUCT_PACKAGES += OdinParts
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
