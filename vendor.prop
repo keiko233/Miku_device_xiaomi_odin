@@ -761,4 +761,4 @@ debug.renderengine.backend=skiaglthreaded
 persist.vendor.recovery_update=false
 
 # Enabled fastcharge
-persist.vendor.fastchg_enabled=1
+persist.vendor.fastchg_enabled=0
