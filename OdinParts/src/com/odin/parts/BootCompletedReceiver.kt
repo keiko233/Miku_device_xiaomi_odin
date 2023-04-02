@@ -27,6 +27,7 @@ import android.view.SurfaceControl
 import androidx.preference.PreferenceManager
 
 import com.odin.parts.display.DcUtils
+import com.odin.parts.fastcharge.ChargeUtils
 import com.odin.parts.touch.TouchUtils
 
 class BootCompletedReceiver : BroadcastReceiver() {
@@ -43,6 +44,9 @@ class BootCompletedReceiver : BroadcastReceiver() {
         if (!TouchUtils.setTouchStatus(if (highPollingRateEnabled) TouchUtils.HIGH_POLLING_RATE_ON else TouchUtils.HIGH_POLLING_RATE_OFF)) {
                 Log.e(TAG, "Failed to set High touch poling rate node on boot!")
         }
+
+        val fastChargeEnabled = sharedPreference.getBoolean(ChargeUtils.FAST_CHARGE_KEY, false)
+        ChargeUtils.setFastChargeStatus(if (fastChargeEnabled) ChargeUtils.FAST_CHARGE_ON else ChargeUtils.FAST_CHARGE_OFF)
 
         val displayToken: IBinder = SurfaceControl.getInternalDisplayToken()
         SurfaceControl.overrideHdrTypes(

@@ -21,6 +21,10 @@
     <string name="dc_dimming_summary">May reduce eye strain when using the phone, which may reduce display quality</string>
     <string name="dc_dimming_failed">Failed to enable DC dimming!</string>
 
+     <!-- Fast charge -->
+    <string name="fast_charge_title">Fast Charge</string>
+    <string name="fast_charge_summary">Can greatly improve the charging speed, but may cause heat</string>
+
     <!-- High touch polling rate -->
     <string name="touch_polling_rate_title">High touch polling rate</string>
     <string name="touch_polling_rate_summary">Increase the touch polling rate from 240hz to 480hz to improve the touch follow-through, which may slightly increase power consumption</string>

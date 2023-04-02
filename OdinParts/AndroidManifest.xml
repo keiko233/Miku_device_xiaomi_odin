@@ -69,5 +69,24 @@
                 android:resource="@string/touch_polling_rate_summary" />
         </activity>
 
+        <activity
+            android:name=".fastcharge.ChargeSettingsActivity"
+            android:label="@string/fast_charge_title"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/fast_charge_summary" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+        </activity>
+
     </application>
 </manifest>
