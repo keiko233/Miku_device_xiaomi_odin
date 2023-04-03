@@ -27,4 +27,8 @@
     <string name="touch_polling_rate_title">高触控采样率</string>
     <string name="touch_polling_rate_summary">将触控刷新率从240hz提升到480hz，提高触控跟手度，可能会略微增加耗电</string>
 
+    <!-- Wireless reverse charging -->
+    <string name="power_share_title">无线反向充电</string>
+    <string name="power_share_summary">为其它设备进行无线充电</string>
+
 </resources>

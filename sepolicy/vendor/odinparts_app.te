@@ -1,5 +1,8 @@
 allow odinparts_app vendor_sysfs_graphics:dir search;
 allow odinparts_app vendor_sysfs_graphics:file rw_file_perms;
 
+allow odinparts_app vendor_sysfs_battery_supply:dir search;
+allow odinparts_app vendor_sysfs_battery_supply:file rw_file_perms;
+
 get_prop(odinparts_app, vendor_fastcharge_prop)
 set_prop(odinparts_app, vendor_fastcharge_prop)
