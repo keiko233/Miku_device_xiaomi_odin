@@ -1,11 +1,5 @@
 [
   { 
-    "repository"   : "LineageOS/android_packages_resources_devicesettings",
-    "target_path"  : "packages/resources/devicesettings",
-    "branch"       : "lineage-20.0",
-    "remote"       : "github"
-  },
-  { 
     "repository"   : "keiko233/vendor_xiaomi_odin",
     "target_path"  : "vendor/xiaomi/odin",
     "branch"       : "TDA",
