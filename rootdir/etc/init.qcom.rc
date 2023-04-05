@@ -242,10 +242,6 @@ on boot
     # High touch polling rate
     chown root system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
 
-    # Wireless reverse charging
-    chown root system /sys/class/qcom-battery/reverse_chg_mode
-    chmod 0664 /sys/class/qcom-battery/reverse_chg_mode
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -522,6 +518,9 @@ on property:sys.boot_completed=1
     setprop lmkd.reinit 1
     # dump qrtr-lookup table to file
     start qrtr-lookup
+    # Wireless reverse charging
+    chown root system /sys/class/qcom-battery/reverse_chg_mode
+    chmod 0664 /sys/class/qcom-battery/reverse_chg_mode
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
