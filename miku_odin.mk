@@ -25,5 +25,5 @@ TARGET_VENDOR_PRODUCT_NAME := odin
 # Build MIKU_GAPPS
 MIKU_GAPPS := true
 
-# Maintaier
-MIKU_MASTER := keiko233
+# Maintainer
+MIKU_MASTER := keiko233,AmeChan
