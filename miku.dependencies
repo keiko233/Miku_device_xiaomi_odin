@@ -1,14 +1,14 @@
 [
   { 
-    "repository"   : "keiko233/vendor_xiaomi_odin",
+    "repository"   : "Miku_vendor_xiaomi_odin",
     "target_path"  : "vendor/xiaomi/odin",
     "branch"       : "TDA",
-    "remote"       : "github"
+    "remote"       : "diva"
   },
   {
-    "repository"   : "keiko233/kernel_xiaomi_odin",
+    "repository"   : "Miku_kernel_xiaomi_odin",
     "target_path"  : "kernel/xiaomi/odin",
     "branch"       : "TDA",
-    "remote"       : "github"
+    "remote"       : "diva"
   }
 ]
