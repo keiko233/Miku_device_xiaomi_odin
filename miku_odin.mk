@@ -22,8 +22,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := odin
 
-# Build MIKU_GAPPS
-MIKU_GAPPS := true
-
 # Maintainer
 MIKU_MASTER := keiko233,AmeChan
