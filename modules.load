@@ -37,7 +37,6 @@ mbhc_dlkm.ko
 mc44s803.ko
 mi_thermal_interface.ko
 msi001.ko
-msm_drm.ko
 mt2060.ko
 mt2063.ko
 mt20xx.ko
