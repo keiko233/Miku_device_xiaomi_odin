@@ -6,8 +6,8 @@
     "remote"       : "diva"
   },
   {
-    "repository"   : "Miku_kernel_xiaomi_odin",
-    "target_path"  : "kernel/xiaomi/odin",
+    "repository"   : "Miku_kernel_xiaomi_modina",
+    "target_path"  : "kernel/xiaomi/modina",
     "branch"       : "TDA",
     "remote"       : "diva"
   }
