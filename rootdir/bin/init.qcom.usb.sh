@@ -41,9 +41,6 @@ soc_id=`cat /sys/devices/soc0/soc_id 2> /dev/null`
 #
 esoc_name=`cat /sys/bus/esoc/devices/esoc0/esoc_name 2> /dev/null`
 
-# Clear vendor USB config because it is only needed for debugging
-setprop persist.vendor.usb.config ""
-
 # This check is needed for GKI 1.0 targets where QDSS is not available
 if [ "$(getprop persist.vendor.usb.config)" == "diag,serial_cdev,rmnet,dpl,qdss,adb" -a \
      ! -d /config/usb_gadget/g1/functions/qdss.qdss ]; then
