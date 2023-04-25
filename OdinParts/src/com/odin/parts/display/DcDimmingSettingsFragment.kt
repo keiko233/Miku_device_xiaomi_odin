@@ -24,7 +24,7 @@ class DcDimmingSettingsFragment : PreferenceFragment() {
                     if (DcUtils.DC_DIMMING_KEY.equals(preference.key)) {
                         if (!DcUtils.setDcStatus(if (any as Boolean) DcUtils.DC_ON else DcUtils.DC_OFF)) {
                             Log.e(TAG, "Failed to set DC node!")
-                            Toast.makeText(context, R.string.dc_dimming_failed, Toast.LENGTH_SHORT)
+                            Toast.makeText(context, R.string.dc_dimming_failed, Toast.LENGTH_SHORT).show()
                             isChecked = false
                         }
                     }
