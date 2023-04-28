@@ -40,6 +40,11 @@
 
 #define FOD_UI_PATH "/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/fod_ui"
 
+#define DISP_PARAM_PATH "sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param"
+#define DISP_PARAM_LOCAL_HBM_MODE "9"
+#define DISP_PARAM_LOCAL_HBM_OFF "0"
+#define DISP_PARAM_LOCAL_HBM_ON "1"
+
 namespace {
 
 template <typename T>
@@ -90,6 +95,7 @@ using RequestStatus =
 
 using ::android::base::SetProperty;
 
+xiaomi_fingerprint_device_t* device;
 BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
@@ -100,6 +106,7 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             ALOGE("Can't open HAL module, class %s", class_name);
             SetProperty("persist.vendor.sys.fp.vendor", "none");
         } else {
+            device = mDevice;
             ALOGI("Opened fingerprint HAL, class %s", class_name);
             SetProperty("persist.vendor.sys.fp.vendor", class_name);
             SetProperty("ro.hardware.fp.udfps", "true");
@@ -372,6 +379,19 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
                 FingerprintAcquiredInfo result =
                     VendorAcquiredFilter(msg->data.acquired.acquired_info, &vendorCode);
                 ALOGD("onAcquired(%d)", result);
+                if (static_cast<int32_t>(result) == FINGERPRINT_ACQUIRED_GOOD) {
+                    device->extCmd(device, COMMAND_NIT, PARAM_NIT_NONE);
+                    getInstance()->onFingerUp();
+                    set(DISP_PARAM_PATH,
+                        std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " +
+                                (DISP_PARAM_LOCAL_HBM_OFF));
+                } else if (vendorCode == 21 || vendorCode == 23) {
+                    /*
+                     * vendorCode = 21 waiting for fingerprint authentication
+                     * vendorCode = 23 waiting for fingerprint enroll
+                     */
+                    set(FOD_STATUS_PATH, FOD_STATUS_ON);
+                }
                 if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
                     ALOGE("failed to invoke fingerprint onAcquired callback");
                 }
