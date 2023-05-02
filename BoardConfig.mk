@@ -70,6 +70,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_boot
 
+# Cust
+BOARD_ROOT_EXTRA_FOLDERS := cust
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 

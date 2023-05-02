@@ -152,3 +152,6 @@
 #/mnt/vendor/persist/qxwz                                                                                 u:object_r:qx_oss_vendor_data_file:s0
 /vendor/bin/qrtr-lookup                                                      u:object_r:vendor_qrtr_exec:s0
 /data/vendor/qrtr(/.*)?                                                      u:object_r:vendor_qrtr_data_file:s0
+
+# Cust
+/cust                                                                        u:object_r:rootfs:s0
