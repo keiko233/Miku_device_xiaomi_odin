@@ -196,7 +196,6 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.data_ltd_sys_ind=1
 
-dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 
 #ro.hdmi.enable=true
