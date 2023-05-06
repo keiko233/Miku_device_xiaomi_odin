@@ -380,11 +380,8 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
                     VendorAcquiredFilter(msg->data.acquired.acquired_info, &vendorCode);
                 ALOGD("onAcquired(%d)", result);
                 if (static_cast<int32_t>(result) == FINGERPRINT_ACQUIRED_GOOD) {
-                    device->extCmd(device, COMMAND_NIT, PARAM_NIT_NONE);
                     getInstance()->onFingerUp();
-                    set(DISP_PARAM_PATH,
-                        std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " +
-                                (DISP_PARAM_LOCAL_HBM_OFF));
+                    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
                 } else if (vendorCode == 21 || vendorCode == 23) {
                     /*
                      * vendorCode = 21 waiting for fingerprint authentication
@@ -472,11 +469,18 @@ Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t /*x*/, uint32_t /*y*/,
         float /*minor*/, float /*major*/) {
     set(FOD_STATUS_PATH, FOD_STATUS_ON);
+    device->extCmd(device, COMMAND_NIT, PARAM_NIT_FOD);
+    set(DISP_PARAM_PATH,
+                        std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " +
+                                (DISP_PARAM_LOCAL_HBM_ON));
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
-    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
+    device->extCmd(device, COMMAND_NIT, PARAM_NIT_NONE);
+    set(DISP_PARAM_PATH,
+                        std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " +
+                                (DISP_PARAM_LOCAL_HBM_OFF));
     return Void();
 }
 
