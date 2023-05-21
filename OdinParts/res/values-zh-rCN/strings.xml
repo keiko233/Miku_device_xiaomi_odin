@@ -31,4 +31,9 @@
     <string name="power_share_title">无线反向充电</string>
     <string name="power_share_summary">为其它设备进行无线充电</string>
 
+    <!-- HBM -->
+    <string name="hbm_title">阳光模式</string>
+    <string name="hbm_summary">使屏幕发出更高亮度，在太阳底下看的更清楚，开启后可能会导致屏下摄像头CUP区域显示异常</string>
+    <string name="hbm_failed">阳光模式开启失败！</string>
+
 </resources>

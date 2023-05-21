@@ -33,4 +33,8 @@
     <string name="power_share_title">Wireless reverse charging</string>
     <string name="power_share_summary">Charge other devices wirelessly</string>
 
+    <!-- HBM -->
+    <string name="hbm_title">High brightness mode</string>
+    <string name="hbm_summary">Make the screen brighter, which may wrong brightness of the CUP area.</string>
+    <string name="hbm_failed">Failed to enable High brightness mode!</string>
 </resources>
