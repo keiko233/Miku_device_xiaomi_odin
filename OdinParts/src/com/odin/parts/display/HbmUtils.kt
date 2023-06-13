@@ -28,5 +28,19 @@ class HbmUtils {
         fun setHbmStatus(status: String): Boolean {
             return FileUtils.writeLine(HBM_NODE, status)
         }
+
+        fun getHbmStatus(): String {
+            FileUtils.fileExists(HBM_NODE).apply {
+                if (this) {
+                    when (FileUtils.readOneLine(HBM_NODE)) {
+                        HBM_ON -> return HBM_ON
+                        HBM_OFF -> return HBM_OFF
+                    }
+                } else {
+                    Log.e(TAG, "HBM is not supported on this device!")
+                }
+            }
+            return HBM_NOT_SUPPORT
+        }
     }
 }

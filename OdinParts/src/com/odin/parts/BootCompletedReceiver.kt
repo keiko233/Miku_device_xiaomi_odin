@@ -29,6 +29,7 @@ import androidx.preference.PreferenceManager
 import com.odin.parts.display.DcUtils
 import com.odin.parts.fastcharge.ChargeUtils
 import com.odin.parts.touch.TouchUtils
+import com.odin.parts.display.HbmUtils
 
 class BootCompletedReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
@@ -55,6 +56,11 @@ class BootCompletedReceiver : BroadcastReceiver() {
                 HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS
             )
         )
+
+        val hbmEnabled = sharedPreference.getBoolean(HbmUtils.HBM_KEY, false)
+        if (!HbmUtils.setHbmStatus(if (hbmEnabled) HbmUtils.HBM_ON else HbmUtils.HBM_OFF)) {
+                Log.e(TAG, "Failed to set HBM node on boot!")
+        }
     }
 
     companion object {

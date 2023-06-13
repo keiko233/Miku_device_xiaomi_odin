@@ -137,5 +137,19 @@
                 android:resource="@string/hbm_summary" />
         </activity>
 
+        <service
+            android:name=".display.HbmTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_qs_hbm"
+            android:label="@string/hbm_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
     </application>
 </manifest>
