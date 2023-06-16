@@ -2371,7 +2371,6 @@ vendor/bin/dppdaemon
 vendor/bin/dspservice
 vendor/bin/embmsslServer
 vendor/bin/f2player
-vendor/bin/feature_enabler_client
 vendor/bin/ffu
 vendor/bin/fmconfig
 vendor/bin/fmfactorytest
@@ -2385,7 +2384,6 @@ vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
 vendor/bin/hw/vendor.qti.sla.service@1.0-service
 vendor/bin/imsdaemon
@@ -2485,7 +2483,6 @@ vendor/etc/cirrus.cfg
 vendor/etc/cit_param_config.json
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/configstore/wigig.xml
-vendor/etc/cs35l41_cal.wav
 vendor/etc/cvp/v2.0/facedetection/model1.dat
 vendor/etc/cvp/v2.1/facedetection/model2.dat
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
@@ -2511,7 +2508,6 @@ vendor/etc/init/dataqti.rc
 vendor/etc/init/diagcommd.rc
 vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/exfat.rc
-vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/ffu.rc
 vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/init/hw/init.qcom.usb.rc
@@ -2560,7 +2556,6 @@ vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.sxrhal@1.0-service.rc
 vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
@@ -2608,8 +2603,6 @@ vendor/etc/miLut_8.txt
 vendor/etc/miLut_9.txt
 vendor/etc/mi_gc_0.txt
 vendor/etc/mi_gc_1.txt
-vendor/etc/mi_us_sweep.wav
-vendor/etc/mi_us_whitenoise.wav
 vendor/etc/modem/Diag.cfg
 vendor/etc/modem/modem_custom_diag.cfg
 vendor/etc/ntrip_account.conf
@@ -2634,9 +2627,6 @@ vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.
 vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql
-vendor/etc/rcv.wav
-vendor/etc/rcv_seal.wav
-vendor/etc/rcv_ultrasound.wav
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
@@ -2655,21 +2645,14 @@ vendor/etc/sensor_diag.cfg
 vendor/etc/sla/slad.conf
 vendor/etc/smomo_setting.xml
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/etc/spk.wav
-vendor/etc/spk_hp.wav
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/task_profiles.json
-vendor/etc/test.wav
 vendor/etc/tof.ubs
-vendor/etc/top_spk.wav
-vendor/etc/top_spk_seal.wav
 vendor/etc/tunings.txt
 vendor/etc/tzlog.dict
-vendor/etc/ultrasound.wav
 vendor/etc/video_system_specs.json
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/etc/vmmgr.conf
 vendor/etc/wifibt_diag.cfg
 vendor/gpu/kbc/sequence_manifest.bin
