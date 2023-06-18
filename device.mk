@@ -122,7 +122,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Boost Framework
-TARGET_SUPPORT_MIKU_BOOST_FRAMEWORK := true
+TARGET_MIKU_BOOST_FRAMEWORK_PLATFORM := lahaina
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
