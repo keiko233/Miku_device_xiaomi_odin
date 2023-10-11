@@ -60,6 +60,7 @@ function blob_fixup() {
             sed -i 's/system\/product/system_ext/g' "${2}"
             ;;
         vendor/bin/hw/dolbycodec2)
+            patchelf --add-needed "libshim.so" "${2}"
             patchelf --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl@1.0.stock.so "${2}"
             ;;
         vendor/etc/camera/odin_motiontuning.xml)
