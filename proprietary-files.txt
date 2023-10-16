@@ -2090,7 +2090,6 @@ system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 -system_ext/framework/com.qti.media.secureprocessor.jar
 -system_ext/framework/extphonelib.jar
 -system_ext/framework/global-cleaner-empty.jar
--system_ext/framework/gson.jar
 -system_ext/framework/mirilhook.jar
 -system_ext/framework/mirilmsgtunnel.jar
 -system_ext/framework/qmapbridge.jar
