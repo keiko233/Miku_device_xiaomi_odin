@@ -317,16 +317,12 @@ vendor/lib64/libcvp_util.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/etc/camera/mibokeh/add_concat_quantize_encry.dlc
 vendor/etc/camera/mibokeh/model_dxo.dlc
 vendor/etc/camera/mibokeh/portrait_blur_800_quan_encry-softmax.dlc
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin
 vendor/etc/camera/model_front_mibokeh_video.dlc
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/camera/com.qti.eeprom.odin_ofilm_ov13b10_gt24p64b_ultra_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.odin_semco_s5khmx_p24c128f_wide_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.odin_sunny_hi847_gt24p128c_tele5x_eeprom.so
@@ -446,7 +442,6 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/camera.xiaomi.so|768c7b267fccc5c2c47a800161d7e58759e77f2b
 vendor/lib64/hw/com.qti.chi.override.so|625b781e63ac32d07dae7921127193bbe76cd233
@@ -512,10 +507,8 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvidhance.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so|75048fd3ee11ab6a2892ebd93dcd0fd086684677
 vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0.so
 
@@ -997,6 +990,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # GPS-Hardware
 vendor/lib64/libaoa.so
@@ -1226,7 +1220,6 @@ vendor/lib64/libavservices_minijail_vendor.so
 
 # NFC
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/bin/nqnfcinfo
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
@@ -1873,7 +1866,6 @@ vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@4.0-service
-vendor/bin/hw/vendor.xiaomi.uwb@1.0-service
 vendor/bin/mlipayd@1.1
 vendor/bin/mtd@1.3
 vendor/bin/tidad@1.2
@@ -1889,7 +1881,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.otrpagent@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc
-vendor/etc/init/vendor.xiaomi.uwb@1.0-service.rc
 vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
@@ -1928,7 +1919,6 @@ vendor/lib64/vendor.xiaomi.hardware.otrpagent@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so
-vendor/lib64/vendor.xiaomi.uwb@1.0.so
 
 # Misc
 product/etc/permissions/com.qti.snapdragon.sdk.display.xml
@@ -2066,7 +2056,6 @@ system_ext/etc/init/init.qti.bt.logger.rc
 system_ext/etc/init/perfservice.rc
 system_ext/etc/init/qspmsvc.rc
 system_ext/etc/init/tcmd.rc
-system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
 system_ext/etc/permissions/android.software.verified_boot.xml
 system_ext/etc/permissions/com.qti.media.secureprocessor.xml
 system_ext/etc/permissions/com.qualcomm.qmapbridge.xml
@@ -2317,10 +2306,6 @@ system_ext/lib64/vendor.qti.hardware.limits@1.0.so
 system_ext/lib64/vendor.qti.hardware.limits@1.1.so
 system_ext/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 system_ext/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
-system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so
 system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
@@ -2400,7 +2385,6 @@ vendor/bin/init.qcom.sdio.sh
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/init.qcom.sh
 vendor/bin/init.qti.chg_policy.sh
-vendor/bin/init.qti.display_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/init.qti.media.sh
 vendor/bin/init.qti.qcv.sh
@@ -2512,7 +2496,6 @@ vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/init/hw/init.qcom.usb.rc
 vendor/etc/init/hw/init.qti.kernel.rc
 vendor/etc/init/hw/init.xiaomi.camera.rc
-vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/imsdaemon.rc
 vendor/etc/init/ims_rtp_daemon.rc
@@ -2786,7 +2769,6 @@ vendor/lib/libwvkeybox.so
 vendor/lib/libxtwifi_server_protocol.so
 vendor/lib/libxtwifi_server_protocol_uri_v3.so
 vendor/lib/qtiwakelock.so
-vendor/lib/uwb_uci.helios.so
 vendor/lib/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib/vndk/libxlog.so
 vendor/lib64/btaudio_offload_if.so
@@ -3019,7 +3001,6 @@ vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-gpu.so
 vendor/lib64/unnhal-acc-htp.so
-vendor/lib64/uwb_uci.helios.so
 vendor/lib64/vendor.fs.fsalsps@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
@@ -3030,7 +3011,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
