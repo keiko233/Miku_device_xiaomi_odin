@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Build fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Xiaomi/odin/odin:13/RKQ1.211001.001/V14.0.1.0.TKMCNXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/odin/odin:13/RKQ1.211001.001/V14.0.6.0.TKMCNXM:user/release-keys</string>
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>

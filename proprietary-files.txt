@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Xiaomi MIX 4 (odin) Android 13 MIUI V14.0.1.0.TKMCNXM, unless pinned
+# These proprietary files are extracted from Xiaomi MIX 4 (odin) Android 13 MIUI V14.0.6.0.TKMCNXM, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
