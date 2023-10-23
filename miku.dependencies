@@ -2,13 +2,13 @@
   { 
     "repository"   : "Miku_vendor_xiaomi_odin",
     "target_path"  : "vendor/xiaomi/odin",
-    "branch"       : "TDA",
+    "branch"       : "Udon",
     "remote"       : "diva"
   },
   {
     "repository"   : "Miku_kernel_xiaomi_modina",
     "target_path"  : "kernel/xiaomi/modina",
-    "branch"       : "TDA",
+    "branch"       : "Udon",
     "remote"       : "diva"
   }
 ]
