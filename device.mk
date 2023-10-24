@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
+# AudioFX
+PRODUCT_PACKAGES += \
+    AudioFX
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
