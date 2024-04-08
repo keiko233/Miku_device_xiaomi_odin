@@ -1,9 +1,0 @@
-cc_library_shared {
-    name: "libshim",
-    srcs: ["libshim.cpp"],
-    shared_libs: [
-        "libui",
-        "libutils",
-    ],
-    vendor: true,
-}
