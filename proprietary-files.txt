@@ -1211,10 +1211,14 @@ vendor/lib/c2.dolby.hevc.sec.dec.so
 vendor/lib/c2.dolby.store.so
 vendor/lib/libavservices_minijail_vendor.so
 vendor/lib/libcodec2_soft_common.so
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so
 vendor/lib/libdolbyottcameracontrol.so
 vendor/lib/libdovi.so
 vendor/lib/libsfplugin_ccodec_utils.so
 vendor/lib64/libavservices_minijail_vendor.so
+vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl@1.0.stock.so
+vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk.stock.so
 
 # NFC
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
