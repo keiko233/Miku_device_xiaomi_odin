@@ -18,7 +18,7 @@ package com.odin.parts.powershare
 
 import android.os.Bundle
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
-import com.android.settingslib.widget.R
+import com.android.settingslib.R
 
 class PowerShareSettingsActivity : CollapsingToolbarBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
