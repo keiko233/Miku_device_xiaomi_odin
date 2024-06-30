@@ -150,7 +150,8 @@ $(call inherit-product-if-exists, vendor/anxcamera/config.mk)
 PRODUCT_PACKAGES += \
     CutoutRingServiceOdin \
     libcamera2ndk_vendor \
-    libgui_vendor
+    libgui_vendor \
+    libpng.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -221,6 +222,9 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -368,6 +372,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libstdc++_vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
@@ -397,6 +402,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl \
+    libsqlite.vendor \
     libxml2
 
 # Sensors
