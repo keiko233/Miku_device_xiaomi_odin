@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
+    libaudioroute.vendor \
     liba2dpoffload \
     libaudiopreprocessing \
     libaudio-resampler \
@@ -71,6 +72,7 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libldnhncr \
+    libprocessgroup.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -151,7 +153,8 @@ PRODUCT_PACKAGES += \
     CutoutRingServiceOdin \
     libcamera2ndk_vendor \
     libgui_vendor \
-    libpng.vendor
+    libpng.vendor \
+    liblz4.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -367,7 +370,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    libssl.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
