@@ -340,6 +340,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libstagefright_softomx_plugin.vendor \
     libmm-omxcore \
     libstagefrighthw
 
