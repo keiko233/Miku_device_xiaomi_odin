@@ -152,7 +152,6 @@ $(call inherit-product-if-exists, vendor/anxcamera/config.mk)
 PRODUCT_PACKAGES += \
     CutoutRingServiceOdin \
     libcamera2ndk_vendor \
-    libgui_vendor \
     libpng.vendor \
     liblz4.vendor
 
